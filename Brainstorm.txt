@@ -1,0 +1,12 @@
+Brainstorm
+
+Backpacking app
+	iOS app pulls data from Expedia API, 
+	functionality
+		place and date - give price
+			flights and hotels
+		price and date - where can I go?
+			random generation of deals
+			flights and hotels
+
+		looking to backpack? Here are some europass options
