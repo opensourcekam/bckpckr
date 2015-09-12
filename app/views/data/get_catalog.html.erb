@@ -1,0 +1,10 @@
+<h1>Data#apiThings</h1>
+<p>Find me in app/views/data/apiThings.html.erb</p>
+
+<ul>
+  <% @results.each do |event| %>
+      <% event.each do |e| %>
+          <li><%=h e['Products']['Name'] %></li>
+      <% end %>
+  <% end %>
+</ul>

@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  background-image: url('/home/nitrous/bckpckr/app/assets/images/chinaIMG.jpg');
+  background-image: url('//images.unsplash.com/photo-1429000263672-1b8b4008d2f7?q=80&fm=jpg&s=86863762a0b82f88a23cd5b43cdcdd27');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Source Sans Pro', sans-serif;
@@ -47,7 +47,7 @@ body {
 }
 
 p {
-  color: black;
+  color: white;
   font-family: Open Sans;
 }
 
@@ -57,9 +57,11 @@ h1 {
 }
 
 #title {
-  font-size: 5em;
+  font-size: 3em;
 }
 
-.jumbotron {
-  width: 100%;
+.form-group {
+  display: inline-block;
+  margin-top: 25px;
 }
+
