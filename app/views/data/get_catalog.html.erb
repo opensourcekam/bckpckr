@@ -3,8 +3,8 @@
 
 <ul>
   <% @results.each do |event| %>
-      <% event.each do |e| %>
-          <li><%=h e['Products']['Name'] %></li>
-      <% end %>
+    <% event.each do |key, value| %>
+      <%= key %>: <%= value %>
+    <% end %>
   <% end %>
 </ul>

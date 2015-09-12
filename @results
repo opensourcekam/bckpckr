@@ -1,0 +1,10 @@
+
+[1mFrom:[0m /home/nitrous/bckpckr/app/controllers/data_controller.rb @ line 5 DataController#get_catalog:
+
+    [1;34m2[0m: [32mdef[0m [1;34mget_catalog[0m
+    [1;34m3[0m:  [1;34m# include HTTParty[0m
+    [1;34m4[0m:  @results = [1;34;4mHTTParty[0m.get([31m[1;31m"[0m[31m//rubygems.org/api/v1/versions/httparty.json[1;31m"[0m[31m[0m)
+ => [1;34m5[0m:  binding.pry
+    [1;34m6[0m:   [1;34m#any instance in action is immediately given to view[0m
+    [1;34m7[0m:  [32mend[0m
+
