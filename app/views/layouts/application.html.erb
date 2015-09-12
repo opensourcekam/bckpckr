@@ -11,14 +11,22 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar">About</span>
+            <span class="icon-bar">Whattup</span>
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/">BCKPCKR</a>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
-
+        <ul class="nav navbar-nav">
+              <li class="nav-link">
+                  <a href="/about">About Us</a>
+              </li>
+              <li class = "nav-link">
+                <a href = "/recommended/">Bckpckr Recommends...</a>
+              </li>
+        </ul>
+    </div>
     </div>
 </nav>
 <!--     <p class="navbar-text">Signed in as ROBINSONKAMERON</p> -->
@@ -26,7 +34,7 @@
 </nav>
 
 <div class="container">
-<%= yield %>
+<%= yield %> <!--This is where html extends from-->
 </div>
 </body>
 </html>
