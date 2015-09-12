@@ -1,0 +1,24 @@
+Brainstorm
+
+Backpacking app
+	iOS app pulls data from Expedia API, 
+	functionality
+		place and date - give price
+			flights and hotels
+		price and date - where can I go?
+			random generation of deals
+			flights and hotels
+
+		looking to backpack? Here are some europass options
+
+Splash Page - bckpckr
+Basic functionality
+	Place and Date - return cost
+	Date and Cost - return place
+	From here, open forms to ask for respective fields
+	Querying the API
+		for finding cost, include cost for flight as of today, hotel
+			option to purchase Europass
+			Optional travel guide/language coach
+		for finding place, include various place options with cost
+			option to save flight for later
