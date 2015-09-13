@@ -1,0 +1,2 @@
+module ServeurlsHelper
+end
