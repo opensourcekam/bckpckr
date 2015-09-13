@@ -5,8 +5,8 @@ class WelcomeController < ApplicationController
   def about
   end
 
-  def search
-    lookup = params[:lookup]
-    @models = Model.find_by_lookup(lookup)
-  end
+#   def search
+#     lookup = params[:lookup]
+#     @models = Model.find_by_lookup(lookup)
+#   end
 end
