@@ -5,6 +5,16 @@
      <p>Where is life leading you?</p>
     </div>
 <!--   </div> -->
+
+<!-- USE form_tag and search_path for lookup
+ <#% form_tag root_path do %>
+  <label for="lookup">Lookup</label>
+  <#%= text_field_tag :lookup %>
+ <#%= submit_tag "Submit" %>
+<#% end %>
+ -->
+
+<!-- GOING TO BREAK THIS FOR A MOMENT -->
 <form class="form-inline" role="form">
   <div class="form-group">
     <label for="text">Date to Travel:</label>
@@ -13,9 +23,14 @@
   <div class="form-group">
     <label for="text">Budget:</label>
     <input type="text" class="form-control" id="text">
-
+  </div>
+  <div class="form-group">
+    <label for="text">Budget:</label>
+    <input type="text" class="form-control" id="text">
+  </div>
   <button type="submit" class="btn btn-default">Submit</button>
   </div>
 </form>
 </div>
+
 
