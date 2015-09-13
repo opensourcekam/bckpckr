@@ -12,7 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui
  */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);

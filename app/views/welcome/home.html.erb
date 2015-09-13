@@ -15,7 +15,7 @@
  -->
 
 
-<form class="form-inline" role="form">
+<form class="form-inline" role="form" action="entries" method="post">
   <div class="form-group">
     <label for="text"></label>
     <%= select_date Date.today, class:"btn btn-default", prefix: :start_date %>
@@ -27,7 +27,7 @@
   <div class="form-group">
     <label for="text"></label>
     <input type="text" class="form-control" id="text" placeholder="Destination">
-    <button type="submit" class="btn btn-default">Submit</button>
+    <input type="submit" value="Submit" >
       </div>
   </form>
 </div>

@@ -1,5 +1,4 @@
-<div class="col-md-4 col-md-offset-4">
-    <div class="well">
+<div class="form-inline">
             <%= form_for @entry do |f| %>
          <div class="form-group">
            <%= f.label :date %>
@@ -12,7 +11,11 @@
           <div class="form-group">
             <%= f.label :destination %>
             <%= f.text_field  :destination, class:"form-control" %>
+          </div>
+           <div class="form-group">
+            <%= f.label :origin %>
+            <%= f.text_field :origin, class:"form-control" %>
+          </div>
             <%= f.submit "Submit", class:"btn btn-default" %>
       <% end %>
-    </div>
   </div>
