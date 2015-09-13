@@ -1,19 +1,6 @@
 class DataController < ApplicationController
-  def Entry
-    date
-    budget
-    destination
-  end
-
-  def index
+  def new
     @entry = Entry.new
-  end
-
-  def add
-    entry = Entry.create(:date => params[:date])
-  end
-  
-    def new
   end
 
   def update
