@@ -2,28 +2,24 @@
 <!-- 	<div class = "jumbotron"> -->
     <div class="container">
       <p><span id="title">bckpckr</span><p>
-     <p>Where is life leading you?</p>
+     <p>Where every journey starts.</p>
     </div>
 <div class="form-inline">
             <%= form_for @entry do |f| %>
+          <div class="form-group">
+             <%= f.text_field :origin, class:"form-control", :placeholder => "Origin" %>
+          </div>
+          <div class="form-group">
+            <%= f.text_field  :destination, class:"form-control", :placeholder => "Destination" %>
+          </div>
+          <div class="form-group">
+            <%= f.text_field  :budget, class:"form-control", :placeholder => "Budget" %>
+          </div>
          <div class="form-group">
-           <%= f.label :date %>
-           <%= f.date_field :date, class:"form-control" %>
+           <%= f.date_field :date, class:"form-control jquery-ui-date", :placeholder => "YYYY-MM-DD" %>
           </div>
           <div class="form-group">
-            <%= f.label :budget %>
-            <%= f.text_field  :budget, class:"form-control" %>
-          </div>
-          <div class="form-group">
-            <%= f.label :destination %>
-            <%= f.text_field  :destination, class:"form-control" %>
-          </div>
-           <div class="form-group">
-            <%= f.label :origin %>
-            <%= f.text_field :origin, class:"form-control" %>
-          </div>
-          <div class="form-group">
-            <%= f.submit "Submit", class:"form-control", id:"text" %>
+            <%= f.submit "GO", class:"form-control", id:"text" %>
           </div>
       <% end %>
   </div>

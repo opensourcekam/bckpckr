@@ -5,8 +5,8 @@ class EntriesController < ApplicationController
     destination = params[:entry][:destination]
     origin = params[:entry][:origin]
     url = create_url(budget, date, destination, origin)
-    places = make_api_call(url)
-    render text: places
+    @places = make_api_call(url)
+    render text: @places
   end
 
   private
