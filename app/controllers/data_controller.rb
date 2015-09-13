@@ -9,6 +9,10 @@ class DataController < ApplicationController
     @entry = Entry.new
   end
 
+  def add
+    entry = Entry.create(:date => params[:date])
+  end
+  
     def new
   end
 
