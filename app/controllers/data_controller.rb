@@ -5,8 +5,11 @@ class DataController < ApplicationController
     destination
   end
 
-  def new
-    :entry = Entry.new
+  def index
+    @entry = Entry.new
+  end
+
+    def new
   end
 
   def update
