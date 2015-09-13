@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get  'data/dataApi' => 'data#get_catalog'
   get  'about_us' => 'about#about'
   get  'recommendations' => 'recommendations#recommendations'
+  get  'data' => 'data#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
