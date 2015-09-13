@@ -15,22 +15,41 @@
  -->
 
 <!-- GOING TO BREAK THIS FOR A MOMENT -->
+<!-- Cool, you found this. That was what they suggested;   -->
 <form class="form-inline" role="form">
   <div class="form-group">
-    <label for="text">Date to Travel:</label>
-    <input type="text" class="form-control" id="email">
+    <label for="text"></label>
+    <%= select_date Date.today, class:"btn btn-default", prefix: :start_date %>
   </div>
   <div class="form-group">
-    <label for="text">Budget:</label>
-    <input type="text" class="form-control" id="text">
+    <label for="text"></label>
+    <input type="text" class="form-control" id="text" placeholder="Budget">
   </div>
   <div class="form-group">
-    <label for="text">Budget:</label>
-    <input type="text" class="form-control" id="text">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-  </div>
-</form>
+    <label for="text"></label>
+    <input type="text" class="form-control" id="text" placeholder="Destination">
+    <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+  </form>
 </div>
+
+<!-- <div class="col-md-4 col-md-offset-4">
+    <div class="well">
+      <#%= form_for @flightinfo do |f| %>
+         <div class="form-group">
+              <#%= f.label :name %>
+              <#%= f.text_field :name, class:"form-control" %>
+          </div>
+          <div class="form-group">
+              <#%= f.label :email %>
+              <#%= f.email_field  :email, class:"form-control" %>
+          </div>
+          <div class="form-group">
+            <#%= f.label :comments %>
+            <#%= f.submit "Submit", class:"btn btn-default" %>
+
+      <#% end %>
+    </div>
+  </div> -->
 
 
