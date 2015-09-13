@@ -5,9 +5,20 @@ class EntriesController < ApplicationController
     destination = params[:entry][:destination]
     origin = params[:entry][:origin]
     url = create_url(budget, date, destination, origin)
-    @places = make_api_call(url)
-    render text: @places
+    my_hash = make_api_call(url)
+    @origin = my_hash['OriginLocation']
+    @destination = my_hash['DestinationLocation']
+    @lowestFare = my_hash['FareInfo'][0]['LowestFare']
+    @lowestDirectFare = my_hash['FareInfo'][0]['LowestNonStopFare']['Fare']
+    #@h = my_hash.to_json.to_s
+    #render text: @places
+    #render text: @h
   end
+
+  def events
+    @json = ActiveSupport::JSON.decode(open(@places).read)
+  end
+
 
   private
   def make_api_call(url)
