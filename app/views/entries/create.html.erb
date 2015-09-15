@@ -1,5 +1,10 @@
-<pre>
-  <%= @origin %>
-  <%= @destination %>
-  <%= @lowestFare %>
-</pre>
+
+<div class="main">
+<!-- 	<div class = "jumbotron"> -->
+  <h1>Itinerary:</h1>
+      <p>Departing from: <%= @origin.to_s %></p>
+     <p>Headed to: <%= @destination.to_s %></p>
+    <p>Lowest fare: <%= @lowestFare.to_s %></p>
+    <p>Lowest Direct fare: <%= @lowestDirectFare.to_s %></p>
+  <p>Departing on: <%= params[:entry][:date] %></p>
+</div>

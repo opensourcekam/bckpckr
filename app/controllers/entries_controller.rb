@@ -8,8 +8,10 @@ class EntriesController < ApplicationController
     my_hash = make_api_call(url)
     @origin = my_hash['OriginLocation']
     @destination = my_hash['DestinationLocation']
-    @lowestFare = my_hash['FareInfo'][0]['LowestFare']
+    @lowestFare = my_hash['FareInfo'][0]['LowestFare']['Fare']
     @lowestDirectFare = my_hash['FareInfo'][0]['LowestNonStopFare']['Fare']
+    @leaving = ['FareInfo'][0]['DepartureDateTime']
+
     #@h = my_hash.to_json.to_s
     #render text: @places
     #render text: @h
