@@ -24,9 +24,12 @@ class EntriesController < ApplicationController
 
   private
   def make_api_call(url)
-    auth = "hkvtx2n96vp1nyg4:6Vs9jJbD="
-    client_id = "V1:hkvtx2n96vp1nyg4:6Vs9jJbD"
-    token = "T1RLAQIjdJk8E4o7xEuiiUEggX32Tm/yWxDXZTIuKa+09RUYwSPVu8kxAACgfMsB3PS5PwT+zm+Gu2oBrpf4Q5yZ70FCiQcoVasmj0wTChuJ+DtbmTr9MDQGcbjs9TsMlr+uGGTZJ1swZwFXIrk51lxTEtaBS4LUf/zmYFMrsON6j/hjC/YzB3bo2/hdY2xKVKZFOIhKuEhGkjvZIONK1fXCFsXzGWvHJq2ZWfiGbkzkd366OcyqMdhIAYwMPEsMSJDZH9MKthJMRQx/vA**"
+    # KEY = V1:l56og6m35jm06ak9:DEVCENTER:EXT
+    # secrete = 5VkhG0aO
+    # token = "T1RLAQIo4yJzltAHpZ/QOaXR16HKCpnj3hCHOwgnR9OXImlCm8qF6luFAACgK4CVwAXCuxZ//OxuwjOH/FafkRjunj0iF/Zgu/0h4/lSWgETsOZHp9pSbzCUzLU9QrOCaeyxg7ZzNWP2I8uIzjBWYKQWwdi2L5V3bwEcyr7idOvTDz5YS28kFH5J8wOvKLe7jA3EeqJT4yQB3Ry2iHoVV1twlo//0obHhhqxPB+Iwbl/tamFanBs91Qu0xubvqlw002ldUNqN33ljXlDbA**"
+    auth = "NVZraEcwYU8="
+    client_id = "VjE6bDU2b2c2bTM1am0wNmFrOTpERVZDRU5URVI6RVhU"
+    token = "T1RLAQIo4yJzltAHpZ/QOaXR16HKCpnj3hCHOwgnR9OXImlCm8qF6luFAACgK4CVwAXCuxZ//OxuwjOH/FafkRjunj0iF/Zgu/0h4/lSWgETsOZHp9pSbzCUzLU9QrOCaeyxg7ZzNWP2I8uIzjBWYKQWwdi2L5V3bwEcyr7idOvTDz5YS28kFH5J8wOvKLe7jA3EeqJT4yQB3Ry2iHoVV1twlo//0obHhhqxPB+Iwbl/tamFanBs91Qu0xubvqlw002ldUNqN33ljXlDbA**"
     response = HTTParty.get(url, headers: { "Authorization" => "Bearer #{token}" })
     hash = JSON.parse(response.body)
   end
@@ -36,6 +39,6 @@ class EntriesController < ApplicationController
     if date
       url+= "&departuredate=" + date
     end
-    url + "&lengthofstay=4"
+      url + "&lengthofstay=4"
   end
 end
